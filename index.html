@@ -1037,7 +1037,6 @@ We celebrate your success, knowing that our technology solutions have empowered 
 <!-- Testimonials Section -->
 <div class="rs-testimonial main-home gray-color pt-120 pb-120 md-pt-80 md-pb-80">
   <div class="container">
-    
     <!-- Section Title -->
     <div class="sec-title2 text-center mb-45">
       <span class="sub-text">Testimonial</span>
@@ -1048,7 +1047,7 @@ We celebrate your success, knowing that our technology solutions have empowered 
     <!-- Carousel -->
     <div class="rs-carousel owl-carousel owl-theme" 
          data-loop="true" 
-         data-items="1" 
+         data-items="3" 
          data-margin="30" 
          data-autoplay="true" 
          data-autoplay-timeout="5000"
@@ -1058,45 +1057,69 @@ We celebrate your success, knowing that our technology solutions have empowered 
       
       <!-- Testimonial 1 -->
       <div class="testi-item">
-        <div class="author-desc">
-          <div class="desc">
-            <img class="quote" src="assets/images/quote2.png" alt="Quote Icon" />
-            <p>
-              "Working with TeleTech for our web design needs was an exceptional experience. 
-              Their team displayed unmatched expertise and creativity!"
-            </p>
+        <div class="testi-card">
+          <div class="testi-image">
+            <a href="https://www.muhizidesigningconstruction.rw/">
+              <img src="assets/images/muhizi_logo.png" alt="Muhizi Logo" />
+            </a>
           </div>
-        </div>
-        <div class="author-img text-center">
-          <a href="https://www.muhizidesigningconstruction.rw/">
-            <img class="main-logo" src="assets/images/muhizi_logo.png" alt="Mpano Logo" />
-          </a>
-        </div>
-        <div class="author-part text-center">
-          <a class="name" href="https://www.muhizidesigningconstruction.rw/">CEO of MCDC</a>
-          <span class="designation">Muhizi Design and Construction Company</span>
+          <div class="testi-content">
+            <div class="author-desc">
+              <div class="desc">
+                <img class="quote" src="assets/images/quote2.png" alt="Quote Icon" />
+                <p class="testi-text">
+                  "Working with TeleTech for our web design needs was an exceptional experience. 
+                  Their team displayed unmatched expertise and creativity!"
+                </p>
+                <p class="full-testi-text" style="display: none;">
+                  "Working with TeleTech for our web design needs was an exceptional experience. 
+                  Their team displayed unmatched expertise and creativity! The website they created for us 
+                  has significantly improved our online presence and customer engagement. Their attention 
+                  to detail and commitment to quality is truly remarkable."
+                </p>
+              </div>
+            </div>
+            <div class="author-info">
+              <div class="author-part">
+                <a class="name" href="https://www.muhizidesigningconstruction.rw/">CEO of MCDC</a>
+                <span class="designation">Muhizi Design and Construction Company</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Testimonial 2 -->
       <div class="testi-item">
-        <div class="author-desc">
-          <div class="desc">
-            <img class="quote" src="assets/images/quote2.png" alt="Quote Icon" />
-            <p>
-              "TeleTech transformed our online presence with an intuitive and modern website. 
-              We've seen a huge increase in engagement!"
-            </p>
+        <div class="testi-card">
+          <div class="testi-image">
+            <a href="https://mpanocourierandrelocation.rw/">
+              <img src="assets/images/mpano_logo.png" alt="Mpano Logo" />
+            </a>
           </div>
-        </div>
-        <div class="author-img text-center">
-          <a href="https://mpanocourierandrelocation.rw/">
-            <img class="hover-logo" src="assets/images/mpano_logo.png" alt="Muhizi Logo" />
-          </a>
-        </div>
-        <div class="author-part text-center">
-          <a class="name" href="https://mpanocourierandrelocation.rw/">CEO of MCRS</a>
-          <span class="designation">Mpano Courier and Relocation Services Company</span>
+          <div class="testi-content">
+            <div class="author-desc">
+              <div class="desc">
+                <img class="quote" src="assets/images/quote2.png" alt="Quote Icon" />
+                <p class="testi-text">
+                  "TeleTech transformed our online presence with an intuitive and modern website. 
+                  We've seen a huge increase in engagement!"
+                </p>
+                <p class="full-testi-text" style="display: none;">
+                  "TeleTech transformed our online presence with an intuitive and modern website. 
+                  We've seen a huge increase in engagement! Their team's expertise in web development 
+                  and digital marketing has helped us reach new customers and grow our business. 
+                  The support and guidance they provide is invaluable."
+                </p>
+              </div>
+            </div>
+            <div class="author-info">
+              <div class="author-part">
+                <a class="name" href="https://mpanocourierandrelocation.rw/">CEO of MCRS</a>
+                <span class="designation">Mpano Courier and Relocation Services Company</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1481,6 +1504,7 @@ We celebrate your success, knowing that our technology solutions have empowered 
 
 <script>
   $(document).ready(function(){
+    // Initialize Owl Carousel
     $(".rs-carousel").owlCarousel({
       loop: true,
       margin: 30,
@@ -1494,6 +1518,25 @@ We celebrate your success, knowing that our technology solutions have empowered 
         600: { items: 2 },
         1000: { items: 3 }
       }
+    });
+
+    // Handle testimonial image click
+    $('.testi-image').on('click', function() {
+      const card = $(this).closest('.testi-card');
+      const testiText = card.find('.testi-text');
+      const fullTestiText = card.find('.full-testi-text');
+      
+      // Toggle between short and full text
+      testiText.toggleClass('active');
+      fullTestiText.toggleClass('active');
+      
+      // Add animation class
+      card.addClass('expanded');
+      
+      // Remove animation class after animation completes
+      setTimeout(() => {
+        card.removeClass('expanded');
+      }, 300);
     });
   });
 </script>

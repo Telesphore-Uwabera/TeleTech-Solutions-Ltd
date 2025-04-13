@@ -1,0 +1,141 @@
+/* Testimonial Cards Styles */
+.testi-item {
+    padding: 15px;
+}
+
+.testi-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.testi-card:hover {
+    transform: translateY(-5px);
+}
+
+.testi-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.testi-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.testi-image:hover img {
+    transform: scale(1.05);
+}
+
+.testi-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-desc {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.author-desc .desc {
+    position: relative;
+}
+
+.author-desc .quote {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    opacity: 0.2;
+}
+
+.testi-text, .full-testi-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.full-testi-text {
+    display: none;
+}
+
+.testi-text.active {
+    display: none;
+}
+
+.full-testi-text.active {
+    display: block;
+}
+
+.author-info {
+    margin-top: auto;
+}
+
+.author-part {
+    text-align: center;
+}
+
+.author-part .name {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.author-part .designation {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Owl Carousel Customization */
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .testi-image {
+        height: 180px;
+    }
+    
+    .testi-text, .full-testi-text {
+        font-size: 15px;
+    }
+    
+    .author-part .name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testi-image {
+        height: 160px;
+    }
+    
+    .testi-content {
+        padding: 15px;
+    }
+} 
