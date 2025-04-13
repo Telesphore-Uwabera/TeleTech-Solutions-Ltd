@@ -39,22 +39,6 @@ TeleTech Solutions Ltd is a leading technology solutions provider offering a wid
 - Font Awesome
 - Netlify Forms
 
-## 📦 Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/TeleTech.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd TeleTech
-```
-
-3. Open the project in your preferred code editor
-
-4. Start a local server to view the website
-
 ## 🔧 Configuration
 
 ### Netlify Forms Setup
