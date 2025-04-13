@@ -824,20 +824,20 @@
               <p class="widget-desc">
                 Subscribe here to get updates from our latest newsletter release! We care you and we want you to be informed evermore.
               </p>
-              <form name="signup-form" method="POST" data-netlify="true">
-                <p>
-                  <input
-                    type="email"
-                    name="EMAIL"
-                    placeholder="Your email address"
-                    required
-                  />
-                  <em class="paper-plane">
-                    <input type="submit" value="Sign up" />
-                  </em>
-                  <i class="fa fa-paper-plane-o"></i>
-                </p>
-              </form>            
+              
+<form name="signup-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+  <input type="hidden" name="form-name" value="signup-form">
+  <p class="d-none">
+    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Your email address" required />
+    <em class="paper-plane">
+      <input type="submit" value="Sign up" />
+    </em>
+    <i class="fa fa-paper-plane-o"></i>
+  </p>
+</form>            
             </div>
           </div>
         </div>
