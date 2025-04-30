@@ -85,11 +85,12 @@ TeleTech Solutions Ltd is a leading technology solutions provider offering a wid
 - **Phone:** (+250) 785 043 355 / 780 770 311
 - **Email:** info.teletech.rw@gmail.com
 - **Social Media:**
-  - Facebook: [TeleTech Solutions Ltd](https://www.facebook.com/teletechsolutionsltd)
-  - Twitter: [@teletech_ltd](https://x.com/teletech_ltd)
-  - Instagram: [@teletech_ltd](https://www.instagram.com/teletech_ltd)
-  - LinkedIn: [TeleTech Ltd](https://www.linkedin.com/company/teletech-ltd)
-  - YouTube: [TeleTech Channel](https://www.youtube.com/watch?v=_mo8WZMAoiY)
+  - Facebook: [TeleTech Facebook Page](https://www.facebook.com/teletechsolutionsltd)
+  - Twitter: [TeleTech X Profile](https://x.com/teletech_ltd)
+  - Instagram: [TeleTech Instagram Page](https://www.instagram.com/teletech_ltd)
+  - LinkedIn: [TeleTech LinkedIn Profile](https://www.linkedin.com/company/teletech-ltd)
+  - YouTube: [TeleTech Youtube Channel](https://www.youtube.com/watch?v=mcHSJwwIq5s)
+  - Website: [TeleTech Website Page](https://teletech.netlify.app/)
 
 ## 🤝 Contributing
 
