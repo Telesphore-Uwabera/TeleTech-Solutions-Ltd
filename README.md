@@ -107,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Team
 
 - **Telesphore Uwabera** - Lead Developer
-- **Patience M.** - Graphic Designer
+- **Patience Manizabayo** - Graphic Designer
 
 ## 🙏 Acknowledgments
 
